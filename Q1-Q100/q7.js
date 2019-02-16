@@ -21,3 +21,6 @@ if(x > 0 && x < range && num < range){
 }
 }
 console.log(reverse(-Math.pow(2,31)))
+var reverse1 = function(x){
+    
+}
