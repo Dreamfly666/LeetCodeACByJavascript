@@ -3,41 +3,42 @@
  * @param {string} x
  * @return {number}
  */
-var romanToInt = function(s){
+var romanToInt = function (s) {
     let num = 0
-    if(s.includes('IV')) num -= 2
-    if(s.includes('IX')) num -= 2
-    if(s.includes('XL')) num -= 20
-    if(s.includes('XC')) num -= 20
-    if(s.includes('CD')) num -= 200
-    if(s.includes('CM')) num -= 200
-    for(let c of s){
-        switch(c){
+    if (s.includes('IV')) num -= 2
+    if (s.includes('IX')) num -= 2
+    if (s.includes('XL')) num -= 20
+    if (s.includes('XC')) num -= 20
+    if (s.includes('CD')) num -= 200
+    if (s.includes('CM')) num -= 200
+    for (let c of s) {
+        switch (c) {
             case 'I':
-            num+=1
-            break
+                num += 1
+                break
             case "V":
-            num += 5
-            break
+                num += 5
+                break
             case "X":
-            num += 10
-            break
+                num += 10
+                break
             case "L":
-            num += 50
-            break
+                num += 50
+                break
             case "C":
-            num += 100
-            break
+                num += 100
+                break
             case "D":
-            num += 500
-            break
+                num += 500
+                break
             case "M":
-            num += 1000
-            break
+                num += 1000
+                break
 
         }
     }
-return num
+    return num
 }
 // runtime 184ms(beats 44.18%) memory 39.9m(beats 100%)
 console.log(romanToInt("MCMXCIV"))
+
