@@ -47,5 +47,6 @@ const calculate = (s) => {
     }
     return result
 }
+
 let s = "2-(2+3)"
 console.log(calculate(s))
