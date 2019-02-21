@@ -15,7 +15,6 @@ var longestCommonPrefix1 = function (strs) {
     }
     return commonPrefix
 }
-
 let strs = ["f", "flaower", "flaow"]
 // console.log(longestCommonPrefix1(strs))
 
