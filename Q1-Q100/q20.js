@@ -18,6 +18,7 @@ var isValid = function (s) {
             stack.push(s[i])
         } else {
             let last = stack.pop()
+
             if (map[last] + map[s[i]] !== 0) return false
         }
     }
@@ -26,5 +27,5 @@ var isValid = function (s) {
 }
 
 // runtime 72ms(beats 41.3%) memory 33.7mb(beats 91.99%)
-let s = '(}'
+let s = '))'
 console.log(isValid(s))
