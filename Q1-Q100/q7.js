@@ -1,7 +1,7 @@
-// Rverse Integer
+// 07 Rverse Integer
 // use array and toString way to solve this problem and is not the high-efficiency one
-// split join parseInt 结合 ifelse
-// 123
+// split join parseInt combine ifelse
+
 var reverse = function (x) {
     let num = 0
     let absX = Math.abs(x)
@@ -21,3 +21,6 @@ if(x > 0 && x < range && num < range){
 }
 }
 console.log(reverse(-Math.pow(2,31)))
+var reverse1 = function(x){
+    
+}
