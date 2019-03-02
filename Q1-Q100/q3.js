@@ -21,3 +21,19 @@ var lengthOfLongestSubstring = function (s) {
 }
 let s = "vdvffv"
 console.log(lengthOfLongestSubstring(s))
+
+var lengthOfLongestSubstring1 = function (s) {
+    let start = 0,max = 0,map = {}
+    for(let i = 0;i < s.length;i++){
+        let curChar = s[i]
+        if(curChar in map && map[curChar] >= start ){
+            start = map[curChar] + 1
+            map[curChar] = i
+        }else {
+            map[curChar] = i
+            max = Math.max(max,i+1-start)
+        }
+    }
+    return max
+}
+console.log(lengthOfLongestSubstring1(s))
