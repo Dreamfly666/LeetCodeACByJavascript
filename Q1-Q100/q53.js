@@ -9,5 +9,6 @@ var maxSubArray = function (nums) {
     }
     return maxCount
 }
+
 // runtime 64ms beats 77.92% memory 35.2m beats 45.53%
 console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
