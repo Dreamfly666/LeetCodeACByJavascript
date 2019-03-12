@@ -7,6 +7,5 @@ var searchInsert = function (nums, target) {
         }
     }
     return nums.length
-
 }
 // runtime 60ms beats 68.66%  memroy 34.4m beats 21.16%
