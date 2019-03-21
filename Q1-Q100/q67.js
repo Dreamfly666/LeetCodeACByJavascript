@@ -1,4 +1,4 @@
 // 67.Add Binary
-var addBinary = funtion(a,b){
-
+var addBinary = function (a, b) {
+    return a + b
 }
