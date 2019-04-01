@@ -8,5 +8,3 @@ var lengthOfLastWord = function (s) {
 let re = lengthOfLastWord('hello world')
 
 console.log(re)
-
-

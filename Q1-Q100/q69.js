@@ -2,7 +2,7 @@
  * @Author: lishanpeng 
  * @Date: 2019-03-20 11:16:50 
  * @Last Modified by: lishanepng
- * @Last Modified time: 2019-03-21 11:14:51
+ * @Last Modified time: 2019-03-31 11:34:42
  */
 // 69.Sqrt(x)
 var mySqrt = function (x) {
@@ -19,15 +19,13 @@ var mysqrt1 = function (x) {
     }
     return i - 1
 }
-// runtime 104ms beats 27.06% memory 35.6m beats 42.86%
-let res = mysqrt1(7)
-console.log(res)
+// runtime 104ms beats 27.06% memory 35
 
-var mysqrt2 = function (x) {
-    for (var i = 0;; i++) {
-        if (i * i > x) {
+var mysqrt2 = function(x){
+    for(var i=0;;i++){
+        if(i * i > x){
             return i - 1
         }
-    }
     return false
+}
 }
