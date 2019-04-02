@@ -17,3 +17,4 @@ var addBiary = function(a,b){
 
 let a = '10',  b = '100'
 console.log(addBiary(a,b))
+
