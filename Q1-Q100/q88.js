@@ -23,4 +23,6 @@ var merge = function (nums1, m, nums2, n) {
         nums1[k--] = nums2[j--]
 }
 
+merge([1,2,3,0,0,0],6,[2,3,4],3)
+
 // runtime 56ms beats 100% memory 33.8mb beats 51.49%

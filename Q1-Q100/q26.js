@@ -20,6 +20,7 @@ var removeDuplicates = function (nums) {
     return nums.length
 }
 
+
 // runtime 104ms(beats 49.3%)  memory  37.5m(beats 16.9%)
 let arr = [0, 0, 1, 1, 2]
 console.log(removeDuplicates(arr))
