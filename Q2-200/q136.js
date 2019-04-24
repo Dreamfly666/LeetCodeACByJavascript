@@ -8,4 +8,4 @@ var singleNumber = function(nums) {
 
 console.log(singleNumber([5,5,1,1,5,3,3]))
 
-// runtime 64ms beats 81.72% memory 36.8mb beats 43.59%
+// runtime 64ms beats 81.72% memory 36.8mb beats 43.59%i
