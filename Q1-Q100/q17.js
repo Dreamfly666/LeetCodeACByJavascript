@@ -15,7 +15,7 @@ var letterCombinations = function (digits) {
             code.push(map[item])
         }
     })
- 
+
     let comb = (arr) => {
         // 临时变量保存前两个组合运算结果
         let tmp = []
@@ -24,7 +24,7 @@ var letterCombinations = function (digits) {
             for (let j = 0; j < arr[1].length; j++) {
                 tmp.push(`${arr[0][i]}${arr[1][j]}`)
             }
-        }
+        }   
         arr.splice(0, 2, tmp)
         // console.log(tmp)
         if (arr.length > 1) {
@@ -38,6 +38,7 @@ var letterCombinations = function (digits) {
     }
     return comb(code)
 }
+// beats 96.52% 
 
 let digits = '2'
 console.log(letterCombinations(digits))

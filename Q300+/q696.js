@@ -23,5 +23,4 @@ var countBinarySubstrings = function (s) {
     }
     return r.length
 }
-
 // 这种方式当测试的字符串特别长，那么正则表达式可能会出现无效invalid的错误。
