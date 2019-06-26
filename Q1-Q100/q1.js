@@ -16,4 +16,5 @@ var twoSum = (nums,target) =>{
     }
     return res
 }
-console.log(twoSum([2,3,5],7))
+
+// 2year and 12

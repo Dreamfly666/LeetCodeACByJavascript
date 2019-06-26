@@ -20,7 +20,7 @@ if(x > 0 && x < range && num < range){
     return 0
 }
 }
-console.log(reverse(-Math.pow(2,31)))
-var reverse1 = function(x){
-    
-}
+
+// runtime 104ms beats 94.52% memory 35.2m beats 97.95%
+// console.log(reverse(-Math.pow(2,31)))
+

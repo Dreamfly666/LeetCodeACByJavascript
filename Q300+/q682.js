@@ -1,5 +1,5 @@
 // 682.Baseball Game
-
+// stack
 var calPoints = function (ops) {
     let result = []
     let pr1, pr2
