@@ -4,17 +4,34 @@
  * @param {Number} target
  * @return {Array}
  * 
-*/
-var twoSum = (nums,target) =>{  
-    let map = {},res = [],i
-    for(i=0;i<nums.length;i++){
-        if(map.hasOwnProperty(nums[i])){
+ */
+var twoSum = (nums, target) => {
+    let map = {},
+        res = [],
+        i
+    for (i = 0; i < nums.length; i++) {
+        //  不能使用map[nums[i]] 因为可能是0 那么也是false
+        if (map.hasOwnProperty(nums[i])) {
             res[0] = map[nums[i]]
             res[1] = i
         }
-        map[target-nums[i]] = i
+        map[target - nums[i]] = i
     }
     return res
 }
-
+// runtime: 68ms beat 83%  memory:37mb beat 5.44%
 // 2year and 12
+
+
+var twoSum1 = (nums, target) => {
+    for (var i = 0; i < nums.length; i++) {
+        var dif = target - nums[i]
+        for (var j = i + 1; j < nums.length; j++) {
+            if (nums[j] === dif) {
+                return [i, j]
+            }
+        }
+    }
+}
+//  runtime 116ms beat 56.21%  memory 35.1mb beat 21.76%
+console.log(twoSum1([1, 2], 3))
